@@ -18,6 +18,7 @@ plt.rcParams['image.cmap'] = 'inferno'
 
 from plotting_functions import (plot_bboxs, plot_texts, plot_circles,
                                  easy_sub_plot)
+
 from image_processing_functions import (invert_image, crop_circle,
                                          background_subtraction,
                                          search_for_blobs,
@@ -25,7 +26,6 @@ from image_processing_functions import (invert_image, crop_circle,
                                          detect_circle_by_canny)
 
 class Counter():
-    
     def __init__(self, image_path=None, image_array=None, verbose=False):
         self._props = []
         self.props = {}
